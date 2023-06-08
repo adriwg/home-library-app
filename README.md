@@ -21,7 +21,7 @@ All information about my books in one place!
 
 ## Installation
 
-There is no installation needed, please visit:  [Shelf](https://home-library-app.netlify.app/). 
+There is no installation needed, please visit:  ([Shelf](https://mini-home-library-app.netlify.app/)). 
 
 Our App is deployed on Netlify.
 
