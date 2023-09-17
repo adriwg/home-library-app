@@ -52,8 +52,8 @@ const Home = (props) => {
     const searchResults = bookList.filter((book) => {
       return (
         book.title.toLowerCase().includes(query.toLowerCase()) ||
-        book.author.toLowerCase().includes(query.toLowerCase()) ||
-        book.ISBN.includes(query)
+        book.author.toLowerCase().includes(query.toLowerCase())/*  ||
+        book.ISBN.includes(query) */
       );
     });
     setBookList(searchResults);

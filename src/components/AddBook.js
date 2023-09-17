@@ -72,6 +72,7 @@ const AddBook = ({updateBookData}) => {
   };
 
   const showBooksData = (data) => {
+    //console.log("data:", data);
     if (!data.items) {
       return [];
     }
@@ -80,7 +81,7 @@ const AddBook = ({updateBookData}) => {
       id: item.id,
       title: item.volumeInfo.title,
       authors: item.volumeInfo.authors || [],
-      isbn: item.volumeInfo.industryIdentifiers
+      ISBN: item.volumeInfo.industryIdentifiers
         ? item.volumeInfo.industryIdentifiers[0].identifier
         : 'N/A',
       description: item.volumeInfo.description || 'N/A',
@@ -225,7 +226,7 @@ const AddBook = ({updateBookData}) => {
                           {book.title}
                         </label>
                         <p className="card-text">Author(s): {book.authors.join(", ")}</p>
-                        <p className="card-text">ISBN: {book.isbn}</p>
+                        <p className="card-text">ISBN: {book.ISBN}</p>
 
                       </div>
                     

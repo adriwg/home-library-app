@@ -49,7 +49,7 @@ function App() {
         "id": updatedBook.id,
         "title": updatedBook.title,
         "author": updatedBook.authors[0],
-        "ISBN": updatedBook.isbn,
+        "ISBN": updatedBook.ISBN,
         "description": updatedBook.description,
         "cover": updatedBook.coverUrl,
         "onLoan": false,
