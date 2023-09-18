@@ -58,6 +58,7 @@ function OnLoan (props){
   }
 
   const onCloseModal = () => {
+    console.log("onCloseModal");
     formRef.current.reset();//reset form
     document.getElementById("exampleModal").classList.remove("show");
     document.querySelectorAll(".modal-backdrop")

@@ -52,8 +52,8 @@ const Home = (props) => {
     const searchResults = bookList.filter((book) => {
       return (
         book.title.toLowerCase().includes(query.toLowerCase()) ||
-        book.author.toLowerCase().includes(query.toLowerCase())/*  ||
-        book.ISBN.includes(query) */
+        book.author.toLowerCase().includes(query.toLowerCase()) ||
+        book.ISBN.includes(query)
       );
     });
     setBookList(searchResults);
@@ -110,7 +110,7 @@ const Home = (props) => {
                 title={book.title}
                 author={book.author}
                 cover = {book.cover}
-                isbn = {book.ISBN}
+                ISBN = {book.ISBN}
                 description = {book.description}
                 onloan = {book.onloan}
                 ratings = {book.ratings}
