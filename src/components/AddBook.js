@@ -85,7 +85,7 @@ const AddBook = ({updateBookData}) => {
         ? item.volumeInfo.industryIdentifiers[0].identifier
         : 'N/A',
       description: item.volumeInfo.description || 'N/A',
-      coverUrl:
+      cover:
         item.volumeInfo.imageLinks && item.volumeInfo.imageLinks.thumbnail
           ? item.volumeInfo.imageLinks.thumbnail
           : 'N/A',
@@ -216,7 +216,7 @@ const AddBook = ({updateBookData}) => {
                       />
                     <div className="AddBook_image_container col-sm-4 col-md-2">
                       <img
-                        src={book.coverUrl}
+                        src={book.cover}
                         alt={book.title}
                         className="book-thumbnail"
                       />

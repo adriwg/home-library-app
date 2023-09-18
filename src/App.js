@@ -51,7 +51,7 @@ function App() {
         "author": updatedBook.authors[0],
         "ISBN": updatedBook.ISBN,
         "description": updatedBook.description,
-        "cover": updatedBook.coverUrl,
+        "cover": updatedBook.cover,
         "onLoan": false,
         "read":false,
         "ratings":0,
